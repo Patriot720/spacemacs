@@ -39,12 +39,12 @@ the [full installation instructions](#install) for other options.
 
 * For stable releases:
   ```shell
-  git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+  git clone https://github.com/Patriot720/spacemacs ~/.emacs.d
   ```
 
 * For development updates and participation:
   ```shell
-  git clone -b develop https://github.com/syl20bnr/spacemacs ~/.emacs.d
+  git clone -b develop https://github.com/Patriot720/spacemacs ~/.emacs.d
   ```
 
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
@@ -198,7 +198,7 @@ brew cask install font-source-code-pro
 #### Install Spacemacs
 
 ```
-git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+git clone https://github.com/Patriot720/spacemacs ~/.emacs.d
 ```
 
 **Notes:**
@@ -270,13 +270,13 @@ be transferred using http, use at your own risk.
 2. Clone the repository with [Git][]:
 
    ```sh
-   git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+   git clone https://github.com/Patriot720/spacemacs ~/.emacs.d
    ```
 
    Or
 
    ```sh
-   git clone --depth 1 https://github.com/syl20bnr/spacemacs ~/.emacs.d
+   git clone --depth 1 https://github.com/Patriot720/spacemacs ~/.emacs.d
    ```
 
    In case you have a limited internet connection or speed.
@@ -294,7 +294,7 @@ be transferred using http, use at your own risk.
    one. The proper code would look something like this:
 
    ```sh
-   git clone https://github.com/syl20bnr/spacemacs /path/to/your/.emacs.d
+   git clone https://github.com/Patriot720/spacemacs /path/to/your/.emacs.d
    ```
 
 3. Install the default fonts
@@ -359,7 +359,7 @@ existing configuration. Clone Spacemacs outside the Emacs dotdirectory
 
 ```sh
 mkdir ~/spacemacs
-git clone https://github.com/syl20bnr/spacemacs.git ~/spacemacs/.emacs.d
+git clone https://github.com/Patriot720/spacemacs.git ~/spacemacs/.emacs.d
 HOME=~/spacemacs emacs
 ```
 
@@ -531,7 +531,7 @@ Thank you!
 [compilation-warnings]: https://github.com/quelpa/quelpa/issues/90#issuecomment-137982713
 [cpaulik-unity-icon]: http://splendidabacus.com/posts/2015/03/spacemacs-unity-icon/
 [icon-mac-instructions]: http://www.idownloadblog.com/2014/07/16/how-to-change-app-icon-mac/
-[latest tags]: https://github.com/syl20bnr/spacemacs/tags
+[latest tags]: https://github.com/Patriot720/spacemacs/tags
 [icon-repository]: https://github.com/nashamri/spacemacs-logo
 [Stack Exchange]: http://emacs.stackexchange.com/questions/tagged/spacemacs
 [Reddit]: https://www.reddit.com/r/spacemacs
