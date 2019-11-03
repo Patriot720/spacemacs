@@ -58,7 +58,7 @@ Navigation^^^^             Actions^^         Visual actions/config^^^
         ("TAB" neotree-stretch-toggle)
         ("|" neotree-enter-vertical-split)
         ("-" neotree-enter-horizontal-split)
-        ("?" nil :exit t)
+        ("?" nil :exit t) ; TODO
         ("'" neotree-quick-look)
         ("c" neotree-create-node)
         ("C" neotree-copy-node)
@@ -101,7 +101,7 @@ Navigation^^^^             Actions^^         Visual actions/config^^^
           (kbd "q") 'neotree-hide
           (kbd "r") 'neotree-rename-node
           (kbd "R") 'neotree-change-root
-          (kbd "?") 'spacemacs/neotree-transient-state/body
+          (kbd "?") 'spacemacs/neotree-transient-state/body ;; DONE CHANGED neotree comment TODO
           (kbd "s") 'neotree-hidden-file-toggle))
 
       (spacemacs/set-leader-keys

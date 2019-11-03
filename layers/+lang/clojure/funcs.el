@@ -94,6 +94,12 @@ the focus."
   (interactive)
   (spacemacs//cider-eval-in-repl-no-focus (cider-ns-form)))
 
+(defun spacemacs/cider-send-run-all-tests-to-repl ()
+  "Send (run-all-tests) function to repl"
+(interactive)
+(spacemacs//cider-eval-in-repl-no-focus "(run-all-tests)")
+  )
+
 (defun spacemacs/cider-send-ns-form-to-repl-focus ()
   "Send ns form to REPL and evaluate it and switch to the REPL in
 `insert state'."

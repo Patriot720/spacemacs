@@ -135,6 +135,7 @@
             "su" 'cider-repl-require-repl-utils
             "sx" 'cider-ns-refresh
             "sX" 'cider-restart
+            "st" 'spacemacs/cider-send-run-all-tests-to-repl 
 
             "Te" 'cider-enlighten-mode
             "Tf" 'spacemacs/cider-toggle-repl-font-locking
