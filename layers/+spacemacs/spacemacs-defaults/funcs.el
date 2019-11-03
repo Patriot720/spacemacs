@@ -89,7 +89,7 @@ Only modes that don't derive from `prog-mode' should be listed here."
 (defcustom spacemacs-large-file-modes-list
   '(archive-mode tar-mode jka-compr git-commit-mode image-mode
                  doc-view-mode doc-view-mode-maybe ebrowse-tree-mode
-                 pdf-view-mode fundamental-mode)
+                 pdf-view-mode tags-table-mode fundamental-mode)
   "Major modes which `spacemacs/check-large-file' will not be
 automatically applied to."
   :group 'spacemacs
@@ -534,6 +534,10 @@ a dedicated window."
    (message "Window %sdedicated to %s"
             (if dedicated "no longer " "")
             (buffer-name))))
+
+(defun spacemacs//init-visual-line-keys ()
+  (evil-define-minor-mode-key 'motion 'visual-line-mode "j" 'evil-next-visual-line)
+  (evil-define-minor-mode-key 'motion 'visual-line-mode "k" 'evil-previous-visual-line))
 
 
 ;; Copy file path

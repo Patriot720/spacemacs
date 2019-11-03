@@ -27,6 +27,7 @@
         magit
         magit-gitflow
         magit-svn
+        org
         (orgit :requires org)
         smeargle
         transient
@@ -164,7 +165,7 @@
       (spacemacs/set-leader-keys
         "gb"  'spacemacs/git-blame-micro-state
         "gc"  'magit-clone
-        "gff" 'magit-find-file
+        "gfF" 'magit-find-file
         "gfl" 'magit-log-buffer-file
         "gfd" 'magit-diff
         "gi"  'magit-init
@@ -251,6 +252,13 @@ Press [_b_] again to blame further in the history, [_q_] to go up or quit."
 (defun git/init-orgit ()
   (use-package orgit
     :defer t))
+
+(defun git/post-init-org ()
+  ;; unfold the org headings for a target line
+  (advice-add 'magit-blame-addition :after #'spacemacs/org-reveal-advice)
+  (advice-add 'magit-diff-visit-file :after #'spacemacs/org-reveal-advice)
+  (advice-add 'magit-diff-visit-worktree-file
+              :after #'spacemacs/org-reveal-advice))
 
 (defun git/init-smeargle ()
   (use-package smeargle
